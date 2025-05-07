@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERENA PARLOUR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Button for event handling -->
+    <button id="actionButton">Follow for more Info.</button>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <img id="slideImage" src="https://lh3.googleusercontent.com/ELWUB6iinKSyRWKoAwSr6CdekhIDASBmx-U9yOmiHgAQVD4wEocpO4LilprbJCp3l2sE3sg5PzTS2SI=w544-h544-l90-rj" alt="Slider Image">
+        <button id="nextSlide">➡</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tabButton" onclick="switchTab(0)">Tab 1</button>
+        <button class="tabButton" onclick="switchTab(1)">Tab 2</button>
+    </div>
+    <div class="tabContent" id="tab1">Content for Tab 1</div>
+    <div class="tabContent" id="tab2">Content for Tab 2</div>
+
+    <!-- Accordion -->
+    <div class="accordion">
+        <button class="accordion-btn">Section 1</button>
+        <div class="panel">
+            <p>Content for Section 1</p>
+        </div>
+
+        <button class="accordion-btn">Section 2</button>
+        <div class="panel">
+            <p>Content for Section 2</p>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <form id="myForm">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <span id="passwordFeedback"></span>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
